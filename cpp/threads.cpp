@@ -7,4 +7,6 @@ void hello () {
 
 int main () {
   std::thread thr (hello);
+
+  thr.join();
 }
